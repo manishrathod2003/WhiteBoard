@@ -9,7 +9,7 @@ const StoreContextProvider = (props) => {
     const { getToken } = useAuth()
     const [colorTheme, setColorTheme] = useState('dark')
     const [whiteboards, setWhiteboards] = useState([])
-    const url = 'http://localhost:5000/api'
+    const url = 'https://taskmaster-3-4vk5.onrender.com/api'
     const [token, setToken] = useState()
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 

@@ -1,0 +1,15 @@
+:root {
+  --background-color: #F8F9FA;
+  --toolbar-background: #E9ECEF;
+  --primary-accent: #007BFF;
+  --secondary-accent: #6C757D;
+  --text-color: #212529;
+  --drawing-color: #000000;
+  --grid-color: #DEE2E6;
+  --canvas-color: #FFFFFF;
+
+  /* UI Effects */
+  --button-radius: 8px;
+  --shadow-light: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.2s ease-in-out;
+}

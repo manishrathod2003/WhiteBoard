@@ -1,0 +1,210 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.dashboard-main{
+  width: 100%;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: var(--toolbar-background);
+  border-right: 1px solid var(--grid-color);
+  display: flex;
+  flex-direction: column;
+  transition: width var(--transition-speed);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--grid-color);
+}
+
+.search-container {
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--grid-color);
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--grid-color);
+  border-radius: var(--button-radius);
+  background-color: var(--canvas-color);
+  transition: all var(--transition-speed);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.board-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.board-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: var(--button-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+  position: relative;
+}
+
+.board-item:hover {
+  background-color: color-mix(in srgb, var(--toolbar-background) 90%, var(--primary-accent));
+}
+
+.board-item.active {
+  background-color: var(--primary-accent);
+  color: white;
+}
+
+.board-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.board-date {
+  font-size: 0.75rem;
+  color: var(--secondary-accent);
+}
+
+.delete-board-btn {
+  background: none;
+  border: none;
+  color: var(--secondary-accent);
+  cursor: pointer;
+  transition: color var(--transition-speed);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.delete-board-btn:hover {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.no-boards-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: var(--secondary-accent);
+  text-align: center;
+}
+
+.board-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--canvas-color);
+  border-bottom: 1px solid var(--grid-color);
+}
+
+.board-name-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-name-btn {
+  background: none;
+  border: none;
+  color: var(--secondary-accent);
+  cursor: pointer;
+  transition: color var(--transition-speed);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.edit-name-btn:hover {
+  color: var(--primary-accent);
+}
+
+.edit-board-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.board-name-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--primary-accent);
+  border-radius: var(--button-radius);
+}
+
+.edit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.save-btn, .cancel-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color var(--transition-speed);
+}
+
+.save-btn {
+  color: green;
+}
+
+.cancel-btn {
+  color: red;
+}
+
+.save-btn:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.cancel-btn:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+/* Add these new styles to the existing CSS */
+.sidebar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.welcome-header {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.welcome-message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+/* Rest of the previous CSS remains the same */
